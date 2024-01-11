@@ -1,262 +1,928 @@
-<div align="center">
-
-# CodiumAI - Meaningful tests for busy devs  
-[![Twitter URL](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/CodiumAI)    [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/kG35uSHDBc)    [![Twitter URL](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@codiumai)
----
-
-**CodiumAI** analyzes your code and generates meaningful tests to catch bugs before you ship. With CodiumAI, you can easily and quickly create comprehensive test suites that help you ensure the reliability and correctness of your software. It supports all languages!
-
----
-
-</div>
-
-## **SUPPORTS ALL PROGRAMMING LANGUAGES**
-
-### Generate tests using CodiumAI:
-
-![How it works](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/Tests-Gif.gif)
-
-### You can also trigger CodiumAI by right-clicking and choosing CodiumAI:
-
-![How it works](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/all-lang-vscode-gif.gif)
-
-_Beta Version - Supported in VSCode version 1.70.0 and above_
-
----
-
-## Explore our new [CodiumAI Chat](https://github.com/Codium-ai/codiumai-vscode-release#codiumai-chat---new)! 
-
-## 🌟 NEW! Explore two of our upcoming [Teams plan](https://www.codium.ai/pricing/) features, available for a limited time!
-
-### Prepare for Pull Request using our new CodiumAI Chat!
-Easily get PR descriptions, automated reviews for your PR, automatic commit messages, and branch-diff improvement suggestions before opening your pull request.
-Try out our new chat feature today! See how it works:
-
-![PrePR](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/prepr.gif)
-
-
-### Extend your current test suites 
-Already have a test suite? Let CodiumAI help you with adding missing tests to it! Currently supporting Python, JS and TS.
-See how it works:
-
-![Extend Test Suite](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/extend-test-suite.gif)
-
----
-
-## Features
-
-#### 🤖 Generate unit tests suite automatically
-
-#### 🔬 Analyze your code
-
-#### 💡 Suggest code modifications to improve the performance and correctness of your code
-
-#### 💫 Find potential bugs in your code and suggest ways to fix them
-
-#### 📄 Add docstring automatically and enhance your code
-
-#### 🚀 Help you improve code quality
-
-By creating comprehensive test suites, our tool helps you catch and fix bugs early and ensures that your code is reliable and maintainable.
-
----
-
-## How to use CodiumAI?
-
-#### TL;DR:
-
-- Click on the `CodiumAI` button above a function/class/method name
-- Use CodiumAI chat to get code explanation, enhance your code, add docstring and get improvement suggestions to your code.
-- Use CodiumAI's keybinding shortcut - mac: `cmd+ctrl+c` | Linux: `alt+shift+c` | windows: `ctrl+win+z`
-- Right-click on your code -> Choose `CodiumAI - ` and choose the desired command
-- Or just use the command palette and select `CodiumAI - Generate Tests`
-
----
-
-
-### Generate tests
-
-Generate tests for a function, a class, or a method using the `Test this class/function/method` button above a function/class/method name:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/GenerateTests.png)
-
-Generate tests for code snippets by selecting the code you want to test, right-clicking on it, choosing the `CodiumAI - ` and selecting the desired command:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/GenerateTestsForSnippet.png)
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/all-languages-vscode.gif)
-
-##### Watch tutorial -> https://youtu.be/BxFuKFX_KSA
-
-#### Review the results
-
-CodiumAI tab will present the test results - review the test names, objectives, types, and the test code:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/ReviewResults.png)
-
-### Explore behavior coverage
-
-CodiumAI generates a behavior list of your code and marks each behavior as covered or not covered based on the generated test.
-The number of covered behaviors calculates the coverage percentages.
-You can refresh the coverage when you modify your test suite (add, remove, or modify tests):
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/BehaviorCoverage.png)
-
-For each behavior, explore its sub-behaviors for more test variations:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/SubBehaviors.png)
-
-#### Add tests for uncovered behavior
-
-For behaviors that are not covered by tests, you can click on the `Generate test` button next to it, and CodiumAI will generate a test
-for this behavior.
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/AddTestForBehavior.png)
-
-#### Add more behaviors
-
-Missing a behavior? Simply add new behaviors and generate tests for them:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/AddBehavior.png)
-
-##### Watch tutorial -> https://youtu.be/xHwIvCjvQDI
-
-#### Modify tests
-
-Want to modify a single test code? Simply type the change you want inside the `Suggest changes..` field, and TestGPT will modify the code based on your request:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/SuggestChanges.png)
-
-You can also click the `Regenerate` button and get an alternative code for this test:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/RegenerateSingleTest.png)
-
-You can manually edit the test within the panel:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/ManualEditTest.png)
-
-Want more tests? Click on `Give me more tests` at the bottom of the test suite:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/RequestMoreTests.png)
-
-You can focus on code changes from your uncommitted changes, read the code explanation of your changes and generate tests for them:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/CodeChanges.png)
-
-Want to remove a test from your test suite? Click on the `delete` button on each test:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/DeleteSingleTest.png)
-
-#### Run your tests and find possible bugs in your code
-
-You can run the generated tests directly from the CodiumAI panel. Simply click `Run All Tests` button to run all the test, or `Run` button on each single test:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/RunYourTests.png)
-
-The test failed? See the log by clicking the `failed` button, and easily fix the test by clickeing `Fix Test` button:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/FixTest.png)
-
-When TestGPT identifies possible bug in your code, it alerts you and gives you relevant information on the bug and possible fix, click on `Possible Code Bug` to see the data:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/PossibleCodeBug.png)
-
-Click `Fix Code` to get a possible fix to your bug:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/FixCode.png)
-
-After analyzing, click `Review Fix` button to see the code diff:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/ReviewFix.png)
-
-Review the suggested fix, and if you approve it, click `Apply to my Code` button merge it to your code:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/ApplyFix.png)
-
-##### Watch tutorial -> https://youtu.be/l_ITy2_KDZ0
-
-#### Change test suite configurations
-
-Improve and personalize your test suite by giving general instructions, providing examples of tests and selecting your preferred testing framework in the `Configuration` section:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/AddTestExample.png)
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/ChangeGeneralConfiguration.png)
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/ModifyFramework.png)
-
-#### Save your test suite
-
-When you're happy with your generated test suite, you can click on `Copy tests` and copy the test suite code, or click on `Open as a file` and we will create a test file for you:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/OpenCopy.png)
-
-### CodiumAI Chat - NEW!
-
-Use our chat commands to improve your code! See how it works:
-
-![How it works](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/chat-gif.gif)
-
-#### Explain your code
-
-Get a detailed code explanation on every component or code snippet you want, using CodiumAI chat command /explain:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/explain.png)
-
-#### Enhance your code
-
-Choose the component you want to enhance, or select the relevant lines, and choose /enhance command in our CodiumAI chat. You can add additional instructions as a free text.
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/enhance.png)
-
-#### Generate Docstring
-
-Choose the component you want to add docstring to, or select the relevant lines, and choose /docstring command in our CodiumAI chat. You can add additional instructions as a free text.
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/docstring.png)
-
-#### Get improvement suggestions
-
-Get suggestions to improve your code correctness and robustness, by choosing /improve command in CodiumAI chat. You can add additional instructions as a free text.
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/improve.png)
-
-
-
-
-### Report a bug
-
-Had a bug with CodiumAI? Report us via email (support@codium.ai), [Discord](https://discord.gg/kG35uSHDBc) or open a [GitHub issue](https://github.com/Codium-ai/codiumai-vscode-release/issues), and provide us with your request ID. You can copy it from the CodiumAI panel:
-
-![](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/SendRequstID.png)
-
-
----
-
-> Tip 1: If you can't see the `Generate Tests` button you might have to set `"editor.codeLens": true,` in your VSCode configuration file.
-> <br>
-
-> Tip 2: You can show and hide CodiumAI panel in the extension settings or from the command palette.
-> <br>
-
----
-
-## How to uninstall
-
-1. Select "CodiumAI" button in the bottom status bar.
-2. Hover over the authentication notification, select the settings icon and "Manage Extension" option from the dropdown.
-3. CodiumAI Extension will open in a new tab. Select Uninstall and Reload VSCode.
-
-## Links
-
-[![Join our Discord community](https://raw.githubusercontent.com/Codium-ai/codiumai-vscode-release/main/media/docs/Joincommunity.png)](https://discord.gg/kG35uSHDBc)
-
-- Discord community: https://discord.gg/kG35uSHDBc
-- CodiumAI site: https://codium.ai
-- Blog: https://www.codium.ai/blog/
-- Troubleshooting: https://www.codium.ai/blog/technical-faq-and-troubleshooting/
-- Support: support@codium.ai
-
-## Terms of use
-
-- Terms of use: https://www.codium.ai/terms
-- Privacy policy: https://www.codium.ai/privacy-policy
-- Please notice - similar to other popular generative-AI tools (such as copilot), we also transmit code snippets to our servers.
+<html>
+
+<head>
+    <title>FAMILY HISTORY</title>
+   
+</head>
+
+<body>
+
+    <div id="familyhistory">
+        <h1>INTEGRATED REHABILITATION FOR ADDICTS-FAMILY HISTORY</h1>
+    </div>
+
+    <table>
+        <tr>
+            <td width="440px">
+                <h3 style="margin-top:10px">9. Prior treatment for addiction</h3>
+            </td>
+            <td width="60px">
+                <input type="radio" id="yes" name="fav_language" value="HTML" style="align-content:end">
+                <label for="yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="no" name="fav_language" value="CSS">
+                <label for="no">No</label>
+            </td>
+
+        </tr>
+    </table>
+
+    <table class="ctd">
+        <tr>
+            <th>Details</th>
+            <th>Year</th>
+            <th>Place of Treatment</th>
+            <th>Treatment Period</th>
+            <th>Sobriety Period(Days)</th>
+            <th>Reason for Sobriety</th>
+            <th>Reason for Relapse</th>
+
+        </tr>
+
+        <tr>
+            <td><label>Treatment At This Centre</label></td>
+            <td><input type="date" id="z" name="r" vaue=""><br></td>
+
+            <td>
+                <select id="occupation" name="occupation" width="10px">
+                    <option value="dharwad">dharwad</option>
+                    <option value="hubli">hubli</option>
+                    <option value="banglore">banglore</option>
+                    <option value="mysore">mysore</option>
+                    <option value="others">others</option>
+                </select>
+            </td>
+
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+
+
+        </tr>
+        <tr>
+            <td><label>Other Addiction Centers</label></td>
+            <td><input type="date" id="z" name="r" vaue=""><br></td>
+
+            <td>
+                <select id="occupation" name="occupation" width="10px">
+                    <option value="dharwad">dharwad</option>
+                    <option value="hubli">hubli</option>
+                    <option value="banglore">banglore</option>
+                    <option value="mysore">mysore</option>
+                    <option value="others">others</option>
+                </select>
+            </td>
+
+
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+
+
+        </tr>
+        <tr>
+            <td><label>Psyciatrist(In/Out-patient basis)</label></td>
+            <td><input type="date" id="z" name="r" vaue=""><br></td>
+
+            <td>
+                <select id="occupation" name="occupation" width="10px">
+                    <option value="dharwad">dharwad</option>
+                    <option value="hubli">hubli</option>
+                    <option value="banglore">banglore</option>
+                    <option value="mysore">mysore</option>
+                    <option value="others">others</option>
+                </select>
+            </td>
+
+
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+
+
+        </tr>
+        <tr>
+            <td><label>At Nursing Home</label></td>
+            <td><input type="date" id="z" name="r" vaue=""><br></td>
+
+            <td>
+                <select id="occupation" name="occupation" width="10px">
+                    <option value="dharwad">dharwad</option>
+                    <option value="hubli">hubli</option>
+                    <option value="banglore">banglore</option>
+                    <option value="mysore">mysore</option>
+                    <option value="others">others</option>
+                </select>
+            </td>
+
+
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+
+
+        </tr>
+        <tr>
+            <td><label>Traditional Treatment</label></td>
+            <td><input type="date" id="z" name="r" vaue=""><br></td>
+
+            <td>
+                <select id="occupation" name="occupation" width="10px">
+                    <option value="dharwad">dharwad</option>
+                    <option value="hubli">hubli</option>
+                    <option value="banglore">banglore</option>
+                    <option value="mysore">mysore</option>
+                    <option value="others">others</option>
+                </select>
+            </td>
+
+
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+
+
+        </tr>
+        <tr>
+            <td><label>Pilgrimage</label></td>
+            <td><input type="date" id="z" name="r" vaue=""><br></td>
+
+            <td>
+                <select id="occupation" name="occupation" width="10px">
+                    <option value="dharwad">dharwad</option>
+                    <option value="hubli">hubli</option>
+                    <option value="banglore">banglore</option>
+                    <option value="mysore">mysore</option>
+                    <option value="others">others</option>
+                </select>
+            </td>
+
+
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+
+
+        </tr>
+        <tr>
+            <td><label>Self Effort</label></td>
+            <td><input type="date" id="z" name="r" vaue=""><br></td>
+
+            <td>
+                <select id="occupation" name="occupation" width="10px">
+                    <option value="dharwad">dharwad</option>
+                    <option value="hubli">hubli</option>
+                    <option value="banglore">banglore</option>
+                    <option value="mysore">mysore</option>
+                    <option value="others">others</option>
+                </select>
+            </td>
+
+
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="number" min="1" max="50" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+            <td><input type="text" id="z" name="r" value=""><br></td>
+
+
+        </tr>
+
+    </table>
+
+    <h2>10. Family History</h2>
+    <form>
+        <div class="formatcard">
+            <table style="margin:7px">
+                <tr>
+                    <td><label for="fname">A.Father's Name:</label></td>
+                    <td><input type="text" id="fname" name="fname" value=""></td>
+                    <td width="70px"></td>
+                    <td><label for="lname">Age:</label></td>
+                    <td><input type="number" min="1" max="100" id="lname" name="lname" value=""></td>
+                    <td width="70px"></td>
+                    <td><label for="lname">Occupation:</label></td>
+                    <td>
+                        <select id="occupation" name="occupation">
+                            <option value=""></option>
+                            <option value="teacher">Teacher</option>
+                            <option value="clerk">Clerk</option>
+                            <option value="farmer">Farmer</option>
+                            <option value="banker">Banker</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="labour">Labour</option>
+                            <option value="others">others</option>
+                            <option value="unemployed">Unemployed</option>
+                        </select>
+                    </td>
+
+
+                    <td width="70px"></td>
+                    <td><label for="lname">Income:</label></td>
+                    <td>
+                        <select id="Income" name="Income">
+                            <option value=""></option>
+                            <option value="&lt25k"> &lt 25k </option>
+                            <option value="25k-50k">25k-50k</option>
+                            <option value="50k-75k">50k-75k</option>
+                            <option value="75k-10.5L">75k-10.5L</option>
+                            <option value="10.5L-20.5L">10.5L-20.5L</option>
+                            <option value="20.5L-30.5L">20.5L-30.5L</option>
+                            <option value="30.5L&gt">30.5L &gt</option>
+
+                        </select>
+                    </td>
+
+                </tr>
+                <tr height="10px">
+
+                </tr>
+                <tr>
+                    <td><label for="fname">B.Mother's Name:</label></td>
+                    <td><input type="text" id="fname" name="fname" value=""></td>
+                    <td width="70px"></td>
+                    <td><label for="lname">Age:</label></td>
+                    <td><input type="number" min="1" max="100" id="lname" name="lname" value=""></td>
+                    <td width="70px"></td>
+                    <td><label for="lname">Occupation:</label></td>
+                    <td>
+                        <select id="occupation" name="occupation">
+                            <option value=""></option>
+                            <option value="House-maker">House-maker</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="clerk">Clerk</option>
+                            <option value="farmer">Farmer</option>
+                            <option value="banker">Banker</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="labour">Labour</option>
+                            <option value="others">others</option>
+
+                            <option value="unemployed">Unemployed</option>
+
+                        </select>
+                    </td>
+                    <td width="70px"></td>
+
+                    <td><label for="lname">Income:</label></td>
+                    <td>
+                        <select id="Income" name="Income">
+                            <option value=""></option>
+                            <option value="&lt 25k"> &lt 25k </option>
+                            <option value="25k-50k">25k-50k</option>
+                            <option value="50k-75k">50k-75k</option>
+                            <option value="75k-10.5L">75k-10.5L</option>
+                            <option value="10.5L-20.5L">10.5L-20.5L</option>
+                            <option value="20.5L-30.5L">20.5L-30.5L</option>
+                            <option value="30.5L &gt">30.5L &gt</option>
+
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h3 style="padding-top: 10px; width:250px">C.Incase of parents death:</h3>
+        <table>
+            <tr>
+                <td width="300px">
+                    <h4 style="padding-top:15px">Has he/she lost any parent?</h4>
+                </td>
+                <td width="100px"><input type="radio" id="y" name="yesno" value="Yes"
+                        onclick="radiobuttonselection('y')"><label>Yes</label><br></td>
+                <td width="100px"><input type="radio" id="n" name="yesno" value="No"
+                        onclick="radiobuttonselection('n')"><label>No</label><br></td>
+            </tr>
+        </table>
+        <div id="parentsdeathagree">
+            <table style="background-color: #ebddd2;">
+                <tr>
+                    <td><label for="y">Parent:</label><br></td>
+                    <td><input type="radio" id="fyes" name="pyes" value="fyes"><label>Father</label><br></td>
+                    <td>
+                        <input type="radio" id="myes" name="pyes" value="myes"><label>Mother</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="140px"><label for="lname">Reason for Death:</label><br></td>
+
+                    <td>
+                        <select id="Disease" name="Reason for Death">
+                            <option value=""></option>
+                            <option value="Heart-Attack">Heart-Attack</option>
+                            <option value="TB(Tuberculosis)">TB(Tuberculosis)</option>
+                            <option value="Cancer">Cancer</option>
+                            <option value="Respiratory-Disease">Respiratory-Disease</option>
+                            <option value="Accident">Accident</option>
+                            <option value="Suicide">Suicide</option>
+                            <option value="Others">Others</option>
+
+
+                        </select>
+                    </td>
+
+                    <td>
+                        <select id="Disease" name="Reason for Death">
+                            <option value=""></option>
+                            <option value="Heart-Attack">Heart-Attack</option>
+                            <option value="TB(Tuberculosis)">TB(Tuberculosis)</option>
+                            <option value="Cancer">Cancer</option>
+                            <option value="Respiratory-Disease">Respiratory-Disease</option>
+                            <option value="Accident">Accident</option>
+                            <option value="Suicide">Suicide</option>
+                            <option value="Others">Others</option>
+
+
+                        </select>
+                    </td>
+
+
+                </tr>
+            </table>
+            <h4 style="padding-top:5px">D.How old were you at that time?</h4>
+
+            <table style="background-color: #ebddd2;">
+                <tr>
+                    <td width="50px"><label for="fname">Father:</label><br></td>
+                    <td width="100px"><input type="number" min="1" max="100" id="fatherdeathage"><br></td>
+                    <td width="30px"><label for="fname">Mother:</label><br></td>
+                    <td width="30px"><input type="number" min="1" max="100" id="motherdeathage"> <br></td>
+
+
+
+                </tr>
+            </table>
+        </div>
+        <hr />
+
+
+        <h3>E.About Siblings</h3>
+        <table style="width:30%;background-color: #ebddd2;border:1px solid black">
+            <tr>
+                <th>Relationship</th>
+                <th>Age</th>
+                <th>Education</th>
+                <th>Occupation</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="z" name="r" value="Sister"><br></td>
+                <td><input type="number" min="1" max="100" id="z" name="r" value=""><br></td>
+                <td>
+                    <select id="Education" name="Education">
+                        <option value=""></option>
+                        <option value="Primary">Primary</option>
+                        <option value="Secondary-School">Secondary-School</option>
+                        <option value="Pre-University">Pre-University</option>
+                        <option value="Under-Graduation">Under-Graduation</option>
+                        <option value="Post-Graduation-Graduation">Post-Graduation</option>
+                        <option value="Ph.D">Ph.D</option>
+                        <option value="Others">Others</option>
+                        <option value="None">None</option>
+
+
+                    </select>
+                </td>
+
+                <td>
+                    <select id="occupation" name="occupation">
+                        <option value=""></option>
+                        <option value="Housewife">House-wife</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="clerk">Clerk</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="banker">Banker</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="engineer">Engineer</option>
+                        <option value="labour">Labour</option>
+                        <option value="others">others</option>
+
+                        <option value="unemployed">Unemployed</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="z" name="r" value="Sister"><br></td>
+                <td><input type="number" min="1" max="100" id="z" name="r" value=""><br></td>
+                <td>
+                    <select id="Education" name="Education">
+                        <option value=""></option>
+                        <option value="Primary">Primary</option>
+                        <option value="Secondary-School">Secondary-School</option>
+                        <option value="Pre-University">Pre-University</option>
+                        <option value="Under-Graduation">Under-Graduation</option>
+                        <option value="Post-Graduation-Graduation">Post-Graduation</option>
+                        <option value="Ph.D">Ph.D</option>
+                        <option value="Others">Others</option>
+                        <option value="None">None</option>
+
+
+                    </select>
+                </td>
+                <td>
+                    <select id="occupation" name="occupation">
+                        <option value=""></option>
+                        <option value="Housewife">House-wife</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="clerk">Clerk</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="banker">Banker</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="engineer">Engineer</option>
+                        <option value="labour">Labour</option>
+                        <option value="others">others</option>
+
+                        <option value="unemployed">Unemployed</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="z" name="r" value="Sister"><br></td>
+                <td><input type="number" min="1" max="100" id="z" name="r" value=""><br></td>
+                <td>
+                    <select id="Education" name="Education">
+                        <option value=""></option>
+                        <option value="Primary">Primary</option>
+                        <option value="Secondary-School">Secondary-School</option>
+                        <option value="Pre-University">Pre-University</option>
+                        <option value="Under-Graduation">Under-Graduation</option>
+                        <option value="Post-Graduation-Graduation">Post-Graduation</option>
+                        <option value="Ph.D">Ph.D</option>
+                        <option value="Others">Others</option>
+                        <option value="None">None</option>
+
+
+                    </select>
+                </td>
+                <td>
+                    <select id="occupation" name="occupation">
+                        <option value=""></option>
+                        <option value="Housewife">House-wife</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="clerk">Clerk</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="banker">Banker</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="engineer">Engineer</option>
+                        <option value="labour">Labour</option>
+                        <option value="others">others</option>
+
+                        <option value="unemployed">Unemployed</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="z" name="r" value="Sister"><br></td>
+                <td><input type="number" min="1" max="100" id="z" name="r" value=""><br></td>
+                <td>
+                    <select id="Education" name="Education">
+                        <option value=""></option>
+                        <option value="Primary">Primary</option>
+                        <option value="Secondary-School">Secondary-School</option>
+                        <option value="Pre-University">Pre-University</option>
+                        <option value="Under-Graduation">Under-Graduation</option>
+                        <option value="Post-Graduation-Graduation">Post-Graduation</option>
+                        <option value="Ph.D">Ph.D</option>
+                        <option value="Others">Others</option>
+                        <option value="None">None</option>
+
+
+                    </select>
+                </td>
+                <td>
+                    <select id="occupation" name="occupation">
+                        <option value=""></option>
+                        <option value="Housewife">House-wife</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="clerk">Clerk</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="banker">Banker</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="engineer">Engineer</option>
+                        <option value="labour">Labour</option>
+                        <option value="others">others</option>
+
+                        <option value="unemployed">Unemployed</option>
+
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <hr />
+
+        <h2>11.Childhood and Adolescent History</h2>
+        <h3>A. How would you describe your childhood/teenage years?:</h3>
+        <textarea id="childhood" name="childhood" rows="5" cols="80"></textarea>
+
+        <h3>B. Did you experience the following before the age of 15 years?</h3>
+        <table style="width:30%;background-color: #ebddd2;" border:"1px solid black">
+            <tr>
+                <th>Situations</th>
+                <th>Present</th>
+                <th>Absent</th>
+            </tr>
+            <tr>
+                <td><label>A-Poverty/severe debts of patients</label></td>
+                <td><input type="radio" id="yes1" name="r1" value="Yes" /></td>
+                <td><input type="radio" id="no1" name="r1" value="No" /></td>
+            </tr>
+            <tr>
+                <td><label>B-Early parental loss</label></td>
+                <td><input type="radio" id="yes2" name="r2" value="Yes"><br></td>
+                <td><input type="radio" id="no2" name="r2" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>C-Extra marital affairs of parents</label></td>
+                <td><input type="radio" id="yes3" name="r3" value="Yes"><br></td>
+                <td><input type="radio" id="no3" name="r3" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>D-Broken home/single parenting</label></td>
+                <td><input type="radio" id="yes4" name="r4" value="Yes"><br></td>
+                <td><input type="radio" id="no4" name="r4" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>E-Violence</label></td>
+                <td><input type="radio" id="yes5" name="r5" value="Yes"><br></td>
+                <td><input type="radio" id="no5" name="r5" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>F-Sexually abused by others</label></td>
+                <td><input type="radio" id="yes6" name="r6" value="Yes"><br></td>
+                <td><input type="radio" id="no6" name="r6" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>G-None</label></td>
+                <td><input type="radio" id="yes7" name="r7" value="Yes"><br></td>
+                <td><input type="radio" id="no7" name="r7" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>H-Anyother</label></td>
+                <td><input type="radio" id="yes8" name="r8" value="Yes"><br></td>
+                <td><input type="radio" id="no8" name="r8" value="No"><br></td>
+            </tr>
+
+        </table>
+
+
+
+        <h3>C. Childhood/Adolescence (Before the age of 15 years)</h3>
+        <table style="width:30%;background-color: #ebddd2; border:1px solid black">
+            <tr>
+                <th>Behavious/Problems Identified</th>
+                <th>Present</th>
+                <th>Absent</th>
+            </tr>
+            <tr>
+                <td><label>A-Running away for home</label></td>
+                <td><input type="radio" id="yes9" name="r9" value="Yes"><br></td>
+                <td><input type="radio" id="no9" name="r9" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>B-Frequent physical fights and violence</label></td>
+                <td><input type="radio" id="yes10" name="r10" value="Yes"><br></td>
+                <td><input type="radio" id="no10" name="r10" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>C-Destruction of others property</label></td>
+                <td><input type="radio" id="yes11" name="r11" value="Yes"><br></td>
+                <td><input type="radio" id="no11" name="r11" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>D-Stealing</label><br></td>
+                <td><input type="radio" id="yes12" name="r12" value="Yes"><br></td>
+                <td><input type="radio" id="no12" name="r12" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>E-Stolastic Backwardness</label><br></td>
+                <td><input type="radio" id="yes13" name="r13" value="Yes"><br></td>
+                <td><input type="radio" id="no13" name="r13" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>F-Experimenting with Drugs/Alcohol</label></td>
+                <td><input type="radio" id="yes14" name="r14" value="Yes"><br></td>
+                <td><input type="radio" id="no14" name="r14" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>G-Gambling</label></td>
+                <td><input type="radio" id="yes15" name="r15" value="Yes"><br></td>
+                <td><input type="radio" id="no15" name="r15" value="No"><br></td>
+            </tr>
+            <tr>
+                <td><label>H-Anyother</label></td>
+                <td><input type="radio" id="yes16" name="r16" value="Yes"><br></td>
+                <td><input type="radio" id="no16" name="r16" value="No"><br></td>
+            </tr>
+        </table>
+
+        <hr />
+        <h2>12.Education History</h2>
+
+        <table class="ctd">
+            <tr>
+                <td>
+                    <h3 style="padding-top: 10px;">A. Years of Education:</h3>
+                </td>
+                <td><input type="number" min="1" max="50" id="z" name="r" value="H-Anyother"><br></td>
+            </tr>
+        </table>
+
+        <table class="ctd">
+            <tr>
+                <td>
+                    <h3>B. Achievements in the Past:</h3>
+                </td>
+                <td>Present</td>
+                <td>Absent</td>
+            </tr>
+            <tr>
+                <td><label>Good Academic Records</label></td>
+                <td><input type="radio" id="yes17" name="r17" value="Yes"><br></td>
+                <td><input type="radio" id="no17" name="r17" value="No"><br></td>
+            </tr>
+
+            <hr />
+
+            <tr>
+                <td><label>High Achiever in the Extra Curricular Activities</label></td>
+                <td><input type="radio" id="z" name="r" value="Yes"><br></td>
+                <td><input type="radio" id="z" name="r" value="No"><br></td>
+            </tr>
+        </table>
+
+
+        <hr />
+
+    
+
+        <table>
+            <tr>
+                <td width="440px">
+                    <h3 style="margin-top:10px">14.Health Status of Family</h3>
+                    <h4 style="margin-top:10px">Has there been anyone in your family who has suffered from any of
+                        these problems?</h4>
+
+                </td>
+
+        </table>
+
+
+        <table class="ctd">
+            <tr>
+                <th>Problems</th>
+                <th colspan="4">Parents and Siblings</th>
+                <th colspan="4">Wife/Children</th>
+            </tr>
+
+            <tr>
+                <td><label>Major Depression</label></td>
+                <td><label>Yes</label></td>
+                <td><label>Relationship</label></td>
+                <td><label>No</label></td>
+                <td><label>Don't know</label></td>
+                <td><label>Yes</label></td>
+                <td><label>Relationship</label></td>
+                <td><label>No</label></td>
+                <td><label>Don't know</label></td>
+            </tr>
+            <tr>
+                <td><label>Suicide / Attempted suicide</label></td>
+                <td><input type="radio" id="yes27" name="r27" value="Yes"><br></td>
+
+                <td>
+                    <select id="parents" name="parents" width="10px">
+                        <option value=""></option>
+                        <option value="Father">Father</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Sister">Sister</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no27" name="r27" value="Yes"><br></td>
+                <td><input type="radio" id="b" name="r27" value=""><br></td>
+                <td><input type="radio" id="yes27" name="r28" value="Yes"><br></td>
+                <td>
+                    <select id="Wife" name="Wife" width="10px">
+                        <option value=""></option>
+                        <option value="Wife">Wife</option>
+                        <option value="Children">Children</option>
+                        <option value="none">None</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no27" name="r28" value="Yes"><br></td>
+                <td><input type="radio" id="b" name="r28" value=""><br></td>
+
+            </tr>
+            <tr>
+                <td><label>Psychiatric Illnesses</label></td>
+                <td><input type="radio" id="yes28" name="r29" value="Yes"><br></td>
+                <td>
+                    <select id="parents" name="parents" width="10px">
+                        <option value=""></option>
+                        <option value="Father">Father</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Sister">Sister</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no28" name="r29" value="Yes"><br></td>
+                <td><input type="radio" id="d" name="r29" value=""><br></td>
+                <td><input type="radio" id="yes28" name="r30" value="Yes"><br></td>
+                <td>
+                    <select id="Wife" name="Wife" width="10px">
+                        <option value=""></option>
+                        <option value="Wife">Wife</option>
+                        <option value="Children">Children</option>
+                        <option value="none">None</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no28" name="r30" value="Yes"><br></td>
+                <td><input type="radio" id="d" name="r30" value=""><br></td>
+
+            </tr>
+            <tr>
+                <td><label>Alcohol Dependence</label></td>
+                <td><input type="radio" id="yes29" name="r31" value="Yes"><br></td>
+                <td>
+                    <select id="parents" name="parents" width="10px">
+                        <option value=""></option>
+                        <option value="Father">Father</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Sister">Sister</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no29" name="r31"  value="Yes"><br></td>
+                <td><input type="radio" id="f" name="r31" value=""><br></td>
+                <td><input type="radio" id="yes29" name="r32" value="Yes"><br></td>
+                <td>
+                    <select id="Wife" name="Wife" width="10px">
+                        <option value=""></option>
+                        <option value="Wife">Wife</option>
+                        <option value="Children">Children</option>
+                        <option value="none">None</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no29" name="r32" value="Yes"><br></td>
+                <td><input type="radio" id="f" name="r32" value=""><br></td>
+            </tr>
+            <tr>
+                <td><label>Drug Dependence</label></td>
+                <td><input type="radio" id="yes30" name="r33" value="Yes"><br></td>
+                <td>
+                    <select id="parents" name="parents" width="10px">
+                        <option value=""></option>
+                        <option value="Father">Father</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Sister">Sister</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no30" name="r33" value="Yes"><br></td>
+                <td><input type="radio" id="h" name="r33" value=""><br></td>
+                <td><input type="radio" id="yes30" name="r34" value="Yes"><br></td>
+                <td>
+                    <select id="Wife" name="Wife" width="10px">
+                        <option value=""></option>
+                        <option value="Wife">Wife</option>
+                        <option value="Children">Children</option>
+                        <option value="none">None</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no30" name="r34" value="Yes"><br></td>
+                <td><input type="radio" id="h" name="r34" value=""><br></td>
+            </tr>
+            <tr>
+                <td><label>Any other</label></td>
+                <td><input type="radio" id="yes31" name="r35" value="Yes"><br></td>
+                <td>
+                    <select id="parents" name="parents" width="10px">
+                        <option value=""></option>
+                        <option value="Father">Father</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Sister">Sister</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no31" name="r35" value="Yes"><br></td>
+                <td><input type="radio" id="j" name="r35" value=""><br></td>
+                <td><input type="radio" id="yes31" name="r36" value="Yes"><br></td>
+                <td>
+                    <select id="Wife" name="Wife" width="10px">
+                        <option value=""></option>
+                        <option value="Wife">Wife</option>
+                        <option value="Children">Children</option>
+                        <option value="none">None</option>
+                    </select>
+                </td>
+                <td><input type="radio" id="no31" name="r36" value="Yes"><br></td>
+                <td><input type="radio" id="j" name="r36" value=""><br></td>
+            </tr>
+
+
+        </table>
+
+
+        <tr>
+            <td width="440px">
+                <h3 style="margin-top:10px">15.Adjustment patterns</h3>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="n" name="yesno" value="No" onclick="radiobuttonselection('n')"><label>Not
+                    Applicable</label><br></td>
+            <td><input type="radio" id="n" name="yesno" value="No"
+                    onclick="radiobuttonselection('n')"><label>Supportive</label><br></td>
+        </tr>
+
+        <table class="ctd">
+
+            <tr>
+                <th>Relationship with family members</th>
+                <th>Parents</th>
+                <th>Siblings</th>
+                <th>Spouse</th>
+                <th>Children</th>
+            </tr>
+
+            <tr>
+                <td><label>No Family(Dead)</label></td>
+                <td><input type="checkbox" id="31" name="r32" value="Yes"><br></td>
+                <td><input type="checkbox" id="32" name="r32" value="Yes"><br></td>
+                <td><input type="checkbox" id="33" name="r32" value="Yes"><br></td>
+                <td><input type="checkbox" id="34" name="r32" value="Yes"><br></td>
+            </tr>
+            <tr>
+                <td><label>Disowned by Family/Mutual Rejection</label></td>
+                <td><input type="checkbox" id="35" name="r33" value="Yes"><br></td>
+                <td><input type="checkbox" id="36" name="r33" value="Yes"><br></td>
+                <td><input type="checkbox" id="37" name="r33" value="Yes"><br></td>
+                <td><input type="checkbox" id="38" name="r33" value="Yes"><br></td>
+            </tr>
+            <tr>
+                <td><label>Mixed or Indifferent Feelings</label></td>
+                <td><input type="checkbox" id="39" name="r34" value="Yes"><br></td>
+                <td><input type="checkbox" id="40" name="r34" value="Yes"><br></td>
+                <td><input type="checkbox" id="41" name="r34" value="Yes"><br></td>
+                <td><input type="checkbox" id="42" name="r34" value="Yes"><br></td>
+            </tr>
+            <tr>
+                <td><label>Usually Friendly Minor Conflicts</label></td>
+                <td><input type="checkbox" id="43" name="r35" value="Yes"><br></td>
+                <td><input type="checkbox" id="44" name="r35" value="Yes"><br></td>
+                <td><input type="checkbox" id="45" name="r35" value="Yes"><br></td>
+                <td><input type="checkbox" id="46" name="r35" value="Yes"><br></td>
+            </tr>
+
+
+        </table>
+
+        <tr>
+            <td width="440px">
+                <h3 style="margin-top:10px">16.Family Damages as seen by the Counselor</h3>
+            </td>
+        </tr>
+
+        <td><label for="fn">a.Mild:</label></td>
+        <td width="100px"></td><br><br>
+        <td><label for="fm">b.Moderate:</label></td>
+       
+        <td width="100px"></td><br><br>
+        <td><label for="fa">c.Severe:</label></td>
+      
+    </hr>
+    <h1>
+        <button enabled>SUBMIT</button>
+
+        <input type="reset">
+        <br>
+        <script>
+            function radiobuttonselection(id) {
+                if (id === "n") {
+                    document.getElementById("parentsdeathagree").style.display = "none";
+                }
+                else if (id === "y") {
+                    document.getElementById("parentsdeathagree").style.display = "block";
+                }
+
+            }
+        </script>
+        </h1>
+</body>
+
+</html>change to js for react
